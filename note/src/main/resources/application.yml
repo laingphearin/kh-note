@@ -20,11 +20,11 @@ spring:
       client:
         registration:
           github:
-            client-id: 13463d13aa95a9f474dd
-            client-secret: 96952f48169cc48c0f0d737cf76d5af6951e5f5a
+            client-id: ${ENV_GITHUB_CLIENT_ID}
+            client-secret: ${ENV_GITHUB_CLIENT_SECRET}
           google:
-            client-id: 35298012448-2o9d8iil4i1d0pmnrs45v125297gf7t8.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ${ENV_GOOGLE_CLIENT_ID}
+            client-secret: ${ENV_GOOGLE_CLIENT_SECRET}
 
 logging:
   level:
