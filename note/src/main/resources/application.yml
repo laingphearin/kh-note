@@ -25,7 +25,14 @@ spring:
           google:
             client-id: ${ENV_GOOGLE_CLIENT_ID}
             client-secret: ${ENV_GOOGLE_CLIENT_SECRET}
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
 logging:
   level:
     org.springframework.security: DEBUG
