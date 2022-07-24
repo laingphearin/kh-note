@@ -34,19 +34,9 @@
     </dependencies>
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--                <version>2.5.7</version>-->
-<!--            </plugin>-->
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-<!--                <configuration>-->
-<!--                    <mainClass>com.khnote.note.NoteApplication</mainClass>-->
-<!--                </configuration>-->
-
                 <executions>
                     <execution>
                         <goals>
@@ -57,6 +47,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
