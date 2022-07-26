@@ -10,3 +10,6 @@ mvn clean package
 
 #stop server
 pkill -f 'java.*kh-note-1.0-SNAPSHOT.jar'
+
+#Swagger
+http://localhost:8080/swagger-ui/index.html
