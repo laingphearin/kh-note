@@ -1,3 +1,24 @@
-<html>
-We will build garage app
-s
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Garage App</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <base href="/"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+</head>
+<div class="container authenticated" style="display:none">
+    Logged in as: <span id="user"></span>
+</div>
+
+We will build garage apps
+
+<script type="text/javascript">
+    $.get("/user", function(data) {
+        $("#user").html(data.name);
+        $(".unauthenticated").hide()
+        $(".authenticated").show()
+    });
+</script>
+</html>

@@ -1,5 +1,8 @@
-package com.khnote.note;
+package com.khnote.note.controller;
 
+import com.khnote.note.Note;
+import com.khnote.note.NoteCreationRequest;
+import com.khnote.note.NoteService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
