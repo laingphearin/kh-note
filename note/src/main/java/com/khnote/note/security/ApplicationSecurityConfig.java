@@ -10,7 +10,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests(a -> a
-                        .antMatchers("/swagger-ui/index.html", "/swagger-ui/*", "/v3/api-docs", "/v3/api-docs/*").permitAll()
+                        .antMatchers("/swagger-ui/index.html", "/swagger-ui/*", "/v3/api-docs", "/v3/api-docs/*", "/webjars/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .oauth2Login();
