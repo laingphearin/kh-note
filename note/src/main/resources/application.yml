@@ -6,7 +6,7 @@ spring:
   datasource:
     password: MyPass
     #    url: jdbc:postgresql://localhost:5432/note
-    url: jdbc:mariadb://localhost:3306/MyGarage?user=root&password=MyPass
+    url: jdbc:mariadb://database:3306/khnote?user=app_user&password=MyPass
     username: root
   jpa:
     hibernate:
