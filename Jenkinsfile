@@ -22,11 +22,14 @@ pipeline {
 
         stage('Check Docker Image Version in Nexus') {
             steps {
+		sh 'echo Hello'
             }
         }
 
         stage('Build Contianer Image') {
             steps {
+		
+		sh 'echo Hello'
             }
         }
         stage('Push Container Image to Nexus') {
@@ -36,12 +39,16 @@ pipeline {
         stage('Trigger Deployment Job'){
             steps{
                  script {
+
+		sh 'echo Hello'
                  }
             }
         }
 
 	stage('Finish release') {
             steps {
+
+		sh 'echo Hello'
             }
         }
     }
