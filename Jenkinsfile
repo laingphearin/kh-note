@@ -38,10 +38,8 @@ pipeline {
         }
         stage('Trigger Deployment Job'){
             steps{
-                 script {
 
 		sh 'echo Hello'
-                 }
             }
         }
 
