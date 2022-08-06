@@ -34,6 +34,7 @@ pipeline {
         }
         stage('Push Container Image to Nexus') {
             steps {
+		sh 'echo Hello'
             }
         }
         stage('Trigger Deployment Job'){
