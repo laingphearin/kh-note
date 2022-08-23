@@ -15,10 +15,10 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: MyPass
-    volumes:
-      - type: bind
-        source: /home/sopheap/Downloads/database
-        target: /var/lib/mysql
+#    volumes:
+#      - type: bind
+#        source: /home/sopheap/Downloads/database
+#        target: /var/lib/mysql
     ports:
        - "3306:3306"
 volumes:
